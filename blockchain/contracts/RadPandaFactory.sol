@@ -67,7 +67,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
     assert(address(proxyRegistry.proxies(owner())) == _msgSender() || owner() == _msgSender());
     require(canMint(_optionId));
 
-    Panda radPanda = Panda(nftAddress);
+    RadPanda radPanda = RadPanda(nftAddress);
     if (_optionId == ONE_PANDA) {
       radPanda.mintTo(_toAddress);
     } else if (_optionId == THREE_PANDAS) {
@@ -82,7 +82,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
       return false;
     }
 
-    Panda radPanda = Panda(nftAddress);
+    RadPanda radPanda = RadPanda(nftAddress);
     uint256 pandaSupply = radPanda.totalSupply();
 
     uint256 numItemsAllocated = 0;
