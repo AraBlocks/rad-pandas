@@ -1,5 +1,5 @@
 # Rad Pandas NFTs
-Commissioned work for @hello_brooklyn_
+Commissioned work for Rad.live
 
 ## OpenSea Proxy Registry Addresses
 ### Mainnet
