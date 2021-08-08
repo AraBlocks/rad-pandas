@@ -17,7 +17,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
 
   address public proxyRegistryAddress;
   address public nftAddress;
-  string public baseURI = "https://animal-kingdom.rad.live/pandas-factory/";
+  string public baseURI = "https://animal-kingdom.rad.live/pandas/factory/";
 
   /// @dev Limit max token supply to ten thousand.
   uint256 MAX_SUPPLY = 10000;
@@ -34,7 +34,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
   }
 
   function name() override external pure returns (string memory) {
-    return "RadKingdom Panda Sale";
+    return "RadKingdom Pandas Sale";
   }
 
   function symbol() override external pure returns (string memory) {
