@@ -2,7 +2,7 @@ const RadPanda = artifacts.require("RadPanda");
 const RadPandaFactory = artifacts.require("RadPandaFactory");
 
 const numTokens = 25;
-const initialMintAddress = "";
+const initialMintAddress = "0x9da6382Fa5EE8c8ec691F56764B017D8EE57C9d9";
 
 module.exports = async (deployer, network) => {
   let proxyRegistryAddress = "";
