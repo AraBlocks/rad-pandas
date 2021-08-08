@@ -119,7 +119,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\n/**\r\n * This is a generic factory contract that can be used to mint tokens. The configuration\r\n * for minting is specified by an _optionId, which can be used to delineate various\r\n * ways of minting.\r\n */\r\ninterface FactoryERC721 {\r\n  /**\r\n   * Returns the name of this factory.\r\n   */\r\n  function name() external view returns (string memory);\r\n\r\n  /**\r\n   * Returns the symbol for this factory.\r\n   */\r\n  function symbol() external view returns (string memory);\r\n  \r\n  /**\r\n   * Number of options the factory supports.\r\n   */\r\n  function numOptions() external view returns (uint256);\r\n\r\n  /**\r\n   * @dev Returns whether the option ID can be minted. Can return false if the developer wishes to\r\n   * restrict a total supply per option ID (or overall).\r\n   */\r\n  function canMint(uint256 _optionId) external view returns (bool);\r\n\r\n  /**\r\n   * @dev Returns a URL specifying some metadata about the option. This metadata can be of the\r\n   * same structure as the ERC721 metadata.\r\n   */\r\n  function tokenURI(uint256 _optionId) external view returns (string memory);\r\n\r\n  /**\r\n   * Indicates that this is a factory contract. Ideally would use EIP 165 supportsInterface()\r\n   */\r\n  function supportsFactoryInterface() external view returns (bool);\r\n\r\n  /**\r\n   * @dev Mints asset(s) in accordance to a specific address with a particular \"option\". This should be\r\n   * callable only by the contract owner or the owner's Wyvern Proxy (later universal login will solve this).\r\n   * Options should also be delineated 0 - (numOptions() - 1) for convenient indexing.\r\n   * @param _optionId the option id\r\n   * @param _toAddress address of the future owner of the asset(s)\r\n   */\r\n  function mint(uint256 _optionId, address _toAddress) external;\r\n}",
-  "sourcePath": "C:\\Users\\Josh\\Documents\\Josh\\GitHub\\rad-pandas\\blockchain\\contracts\\IFactoryERC721.sol",
+  "sourcePath": "C:/Users/Josh/Documents/Josh/GitHub/rad-pandas/blockchain/contracts/IFactoryERC721.sol",
   "ast": {
     "absolutePath": "/C/Users/Josh/Documents/Josh/GitHub/rad-pandas/blockchain/contracts/IFactoryERC721.sol",
     "exportedSymbols": {
@@ -1248,7 +1248,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-08-08T00:46:54.133Z",
+  "updatedAt": "2021-08-08T00:47:44.994Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

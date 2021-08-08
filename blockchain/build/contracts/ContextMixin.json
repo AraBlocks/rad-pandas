@@ -10,7 +10,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nabstract contract ContextMixin {\r\n  function msgSender()\r\n    internal\r\n    view\r\n    returns (address payable sender)\r\n  {\r\n    if (msg.sender == address(this)) {\r\n      bytes memory array = msg.data;\r\n      uint256 index = msg.data.length;\r\n      assembly {\r\n        // Load the 32 bytes word from memory with the address on the lower 20 bytes, and mask those.\r\n        sender := and(\r\n          mload(add(array, index)),\r\n          0xffffffffffffffffffffffffffffffffffffffff\r\n        )\r\n      }\r\n    } else {\r\n      sender = payable(msg.sender);\r\n    }\r\n    return sender;\r\n  }\r\n}",
-  "sourcePath": "C:\\Users\\Josh\\Documents\\Josh\\GitHub\\rad-pandas\\blockchain\\contracts\\ContentMixin.sol",
+  "sourcePath": "C:/Users/Josh/Documents/Josh/GitHub/rad-pandas/blockchain/contracts/ContentMixin.sol",
   "ast": {
     "absolutePath": "/C/Users/Josh/Documents/Josh/GitHub/rad-pandas/blockchain/contracts/ContentMixin.sol",
     "exportedSymbols": {
@@ -1179,7 +1179,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-08-08T00:46:54.051Z",
+  "updatedAt": "2021-08-08T00:52:15.760Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
