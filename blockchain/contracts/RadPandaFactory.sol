@@ -34,7 +34,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
   }
 
   function name() override external pure returns (string memory) {
-    return "RadKingdom Panda NFT Sale";
+    return "RadKingdom Panda Sale";
   }
 
   function symbol() override external pure returns (string memory) {
