@@ -20,7 +20,7 @@ contract RadPanda is ERC721Tradable {
   }
 
   function _initialMint(uint256 _numTokens, address _initialMintAddress) private {
-    for (uint256 i=0; i<numTokens; i++) {
+    for (uint256 i=0; i<_numTokens; i++) {
       mintTo(_initialMintAddress);
     }
   }
