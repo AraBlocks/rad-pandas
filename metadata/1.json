@@ -1,0 +1,12 @@
+{
+  "attributes": [
+    {
+      "trait_type": "Number Of Pandas", 
+      "value": 3
+    } 
+  ], 
+  "description": "When purchased, you will receive three random Pandas from the Rad Animal Kingdom collection.", 
+  "external_url": "https://radkingdom.org/", 
+  "image": "https://animal-kingdom.rad.live/pandas/factory/1.jpg", 
+  "name": "Three RadKingdom Pandas"
+}
