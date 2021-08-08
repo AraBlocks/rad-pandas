@@ -15,6 +15,6 @@ module.exports = async (deployer, network) => {
   await deployer.deploy(RadPanda, proxyRegistryAddress, numTokens, initialMintAddress);
   await deployer.deploy(RadPandaFactory, proxyRegistryAddress, RadPanda.address);
 
-  const RadPanda = await RadPanda.deployed();
-  await RadPanda.transferOwnership(RadPandaFactory.address);
+  const radPanda = await RadPanda.deployed();
+  await radPanda.transferOwnership(RadPandaFactory.address);
 };
