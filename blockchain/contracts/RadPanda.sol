@@ -5,15 +5,15 @@ import "./ERC721Tradable.sol";
 
 /// @title RadPanda ERC-721 token contract.
 contract RadPanda is ERC721Tradable {
-    constructor(address _proxyRegistryAddress)
-        ERC721Tradable("RadPanda", "PANDA", _proxyRegistryAddress)
-    {}
+  constructor(address _proxyRegistryAddress)
+    ERC721Tradable("RadPanda", "PANDA", _proxyRegistryAddress)
+  {}
 
-    function baseTokenURI() override public pure returns (string memory) {
-        return "https://animal-kingdom.rad.live/pandas/";
-    }
+  function baseTokenURI() override public pure returns (string memory) {
+    return "https://animal-kingdom.rad.live/pandas/";
+  }
 
-    function contractURI() public pure returns (string memory) {
-        return "https://www.radkingdom.org/";
-    }
+  function contractURI() public pure returns (string memory) {
+    return "https://www.radkingdom.org/";
+  }
 }
