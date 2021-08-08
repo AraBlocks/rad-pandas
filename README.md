@@ -1,6 +1,12 @@
 # Rad Pandas NFTs
 Commissioned work for Rad.live
 
+## URI Structure
+### Base URI
+https://animal-kingdom.rad.live/pandas/
+### Token URI (E.g. tokenId=3)
+https://animal-kingdom.rad.live/pandas/3.json
+
 ## OpenSea Proxy Registry Addresses
 ### Mainnet
 #### `0xa5409ec958c83c3f309868babaca7c86dcb077c1`
