@@ -7,8 +7,9 @@ import "./ERC721Tradable.sol";
 contract RadPanda is ERC721Tradable {
   constructor(address _proxyRegistryAddress, uint256 numTokens, address initialMintAddress)
     ERC721Tradable("RadPanda", "PANDA", _proxyRegistryAddress)
+  {
     _initialMint(numTokens, initialMintAddress);
-  {}
+  }
 
   function baseTokenURI() override public pure returns (string memory) {
     return "https://animal-kingdom.rad.live/pandas/";
