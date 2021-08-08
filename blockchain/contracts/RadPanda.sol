@@ -6,7 +6,7 @@ import "./ERC721Tradable.sol";
 /// @title RadPanda ERC-721 token contract.
 contract RadPanda is ERC721Tradable {
   constructor(address _proxyRegistryAddress, uint256 numTokens, address initialMintAddress)
-    ERC721Tradable("RadPanda", "PANDA", _proxyRegistryAddress)
+    ERC721Tradable("RadKingdom Panda", "PANDA", _proxyRegistryAddress)
   {
     _initialMint(numTokens, initialMintAddress);
   }
