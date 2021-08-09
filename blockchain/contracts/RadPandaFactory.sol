@@ -22,9 +22,8 @@ contract RadPandaFactory is FactoryERC721, Ownable {
   /// @dev Limit max token supply to ten thousand.
   uint256 MAX_SUPPLY = 10000;
 
-  uint256 NUM_OPTIONS = 2;
+  uint256 NUM_OPTIONS = 1;
   uint256 ONE_PANDA = 0;
-  uint256 THREE_PANDAS = 1;
 
   constructor(address _proxyRegistryAddress, address _nftAddress) {
     proxyRegistryAddress = _proxyRegistryAddress;
@@ -70,10 +69,6 @@ contract RadPandaFactory is FactoryERC721, Ownable {
     RadPanda radPanda = RadPanda(nftAddress);
     if (_optionId == ONE_PANDA) {
       radPanda.mintTo(_toAddress);
-    } else if (_optionId == THREE_PANDAS) {
-      for (uint256 i=0; i<3; i++) {
-        radPanda.mintTo(_toAddress);
-      }
     }
   }
 
@@ -88,8 +83,6 @@ contract RadPandaFactory is FactoryERC721, Ownable {
     uint256 numItemsAllocated = 0;
     if (_optionId == ONE_PANDA) {
       numItemsAllocated = 1;
-    } else if (_optionId == THREE_PANDAS) {
-      numItemsAllocated = 3;
     }
 
     return pandaSupply < (MAX_SUPPLY - numItemsAllocated);
