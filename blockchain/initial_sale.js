@@ -27,7 +27,8 @@ const seaport = new OpenSeaPort(
     networkName:
       network === 'live'
         ? Network.Main
-        : Network.Rinkeby
+        : Network.Rinkeby,
+    apiKey: secrets['OPENSEA_API_KEY']
   },
   (arg) => console.log(arg)
 );
