@@ -1,12 +1,12 @@
-const RadPanda = artifacts.require("RadPanda");
-const RadPandaFactory = artifacts.require("RadPandaFactory");
+const RadPanda = artifacts.require('RadPanda');
+const RadPandaFactory = artifacts.require('RadPandaFactory');
 
 module.exports = async (deployer, network) => {
-  let proxyRegistryAddress = "";
+  let proxyRegistryAddress = '';
   if (network === 'rinkeby') {
-    proxyRegistryAddress = "0xf57b2c51ded3a29e6891aba85459d600256cf317";
+    proxyRegistryAddress = '0xf57b2c51ded3a29e6891aba85459d600256cf317';
   } else {
-    proxyRegistryAddress = "0xa5409ec958c83c3f309868babaca7c86dcb077c1";
+    proxyRegistryAddress = '0xa5409ec958c83c3f309868babaca7c86dcb077c1';
   }
 
   await deployer.deploy(RadPanda, proxyRegistryAddress, {gas: 4500000});
