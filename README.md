@@ -15,11 +15,15 @@ Install [Node.js](https://nodejs.org/en/download/)
 ### `6`
 Create an [Infura](https://infura.io/) account and create a new project
 ### `7`
-Rename the 'secrets_TEMPLATE.json' file to 'secrets.json'
+Apply for an [OpenSea API Key](https://docs.opensea.io/reference/request-an-api-key)
 ### `8`
-Fill 'secrets.json' file with the 'Project Id' from Infura and seed phrase from Ethereum wallet
+Rename the 'secrets_TEMPLATE.json' file to 'secrets.json'
 ### `9`
+Fill 'secrets.json' file with the 'Project Id' from Infura, the seed phrase from your Ethereum wallet and the OpenSea API key
+### `10`
 `$ truffle deploy --network live`
+### `11`
+`$ node initial_sale.js`
 
 ## URI Structure
 ### Base URI
