@@ -14,6 +14,6 @@ contract RadPanda is ERC721Tradable {
   }
 
   function contractURI() public pure returns (string memory) {
-    return "https://animal-kingdom.rad.live/pandas/contract.json";
+    return "https://animal-kingdom.rad.live/pandas/contract";
   }
 }

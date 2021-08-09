@@ -89,7 +89,7 @@ contract RadPandaFactory is FactoryERC721, Ownable {
   }
 
   function tokenURI(uint256 _optionId) override external view returns (string memory) {
-    return string(abi.encodePacked(baseURI, Strings.toString(_optionId), ".json"));
+    return string(abi.encodePacked(baseURI, Strings.toString(_optionId)));
   }
 
   /**
