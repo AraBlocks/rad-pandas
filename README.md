@@ -1,11 +1,31 @@
 # Rad Pandas NFTs
 Commissioned work for Rad.live
 
+## Setting Up The Environment
+### `1`
+Install [Git](https://git-scm.com/downloads)
+### `2`
+Install [Node.js](https://nodejs.org/en/download/)
+### `3`
+`$ git clone https://github.com/jshstw/rad-pandas.git`
+### `4`
+`$ cd rad-pandas/blockchain`
+### `5`
+`$ npm install`
+### `6`
+Create an [Infura](https://infura.io/) account and create a new project
+### `7`
+Rename the 'secrets_TEMPLATE.json' file to 'secrets.json'
+### `8`
+Fill 'secrets.json' file with the 'Project Id' from Infura and seed phrase from Ethereum wallet
+### `9`
+`$ truffle deploy --network live`
+
 ## URI Structure
 ### Base URI
 https://animal-kingdom.rad.live/pandas/
 ### Token URI (E.g. tokenId=3)
-https://animal-kingdom.rad.live/pandas/3.json
+https://animal-kingdom.rad.live/pandas/3
 
 ## OpenSea Proxy Registry Addresses
 ### Mainnet
