@@ -1,29 +1,31 @@
-const opensea = require("opensea-js");
+const opensea = require('opensea-js');
 const OpenSeaPort = opensea.OpenSeaPort;
 const Network = opensea.Network;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const secrets = require('./secrets.json');
 
-const network = "rinkeby"; // change between 'live' and 'rinkeby' accordingly
+const network = 'rinkeby'; // change between 'live' and 'rinkeby' accordingly
 
-const OWNER_ADDRESS = "";
-const FACTORY_CONTRACT_ADDRESS = "";
-const NUM_OF_SALES = 10000;
+const OWNER_ADDRESS = '0x88c055b85751448f3013378544ad463b2542f099';
+const FACTORY_CONTRACT_ADDRESS = '0x83d34e89881b5b49ba16fbc3d297103deb94fcc0';
+const NUM_OF_SALES = 9998;
 const FIXED_PRICE = 0.04;
 
-const provider;
+const INFURA_URL = '';
 if (network === 'rinkeby') {
-  provider = new HDWalletProvider(secrets['SEED_PHRASE'], 'https://rinkeby.infura.io/v3/' + secrets['API_KEY']);
+  INFURA_URL = 'https://rinkeby.infura.io/v3/';
 } else {
-  provider = new HDWalletProvider(secrets['SEED_PHRASE'], 'https://mainnet.infura.io/v3/' + secrets['API_KEY']);
+  INFURA_URL = 'https://mainnet.infura.io/v3/';
 }
+
+const provider = new HDWalletProvider(secrets['SEED_PHRASE'], INFURA_URL + secrets['API_KEY']);
 
 const seaport = new OpenSeaPort(
   provider,
   {
     networkName:
-      network === "live"
+      network === 'live'
         ? Network.Main
         : Network.Rinkeby
   },
