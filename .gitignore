@@ -1,7 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 # secrets
-secrets.json
+blockchain/secrets.json
 
 ### VisualStudioCode template
 .vscode/*
