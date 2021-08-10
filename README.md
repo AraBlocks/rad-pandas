@@ -1,6 +1,12 @@
 # Rad Pandas NFTs
 Commissioned work for Rad.live
 
+## Contract Addresses (Mainnet)
+### RadPanda
+#### [](https://etherscan.io/address/)
+### RadPandaFactory
+#### [](https://etherscan.io/address/)
+
 ## Setting Up The Environment
 ### `1`
 Install [Git](https://git-scm.com/downloads)
