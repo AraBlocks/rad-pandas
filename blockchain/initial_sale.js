@@ -7,7 +7,7 @@ const secrets = require('./secrets.json');
 
 const network = 'live'; // change between 'live' and 'rinkeby' accordingly
 
-const OWNER_ADDRESS = '';
+const OWNER_ADDRESS = '0x9D582750f758b6A2dC2397669E55A19099AA18ee';
 const FACTORY_CONTRACT_ADDRESS = '';
 const NUM_OF_SALES = 10000;
 const FIXED_PRICE = 0.04;
