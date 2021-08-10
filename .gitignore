@@ -377,3 +377,5 @@ node_modules
 bin_output
 logspackage-lock.json
 build/
+
+blockchain/build/
