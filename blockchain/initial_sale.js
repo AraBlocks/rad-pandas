@@ -14,9 +14,9 @@ const FIXED_PRICE = 0.04;
 
 let INFURA_URL = '';
 if (network === 'rinkeby') {
-  INFURA_URL = 'https://rinkeby.infura.io/v3/';
+  INFURA_URL = 'wss://rinkeby.infura.io/ws/v3/';
 } else {
-  INFURA_URL = 'https://mainnet.infura.io/v3/';
+  INFURA_URL = 'wss://mainnet.infura.io/ws/v3/';
 }
 
 const provider = new HDWalletProvider(secrets['SEED_PHRASE'], INFURA_URL + secrets['API_KEY']);
